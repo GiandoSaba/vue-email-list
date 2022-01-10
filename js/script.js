@@ -6,6 +6,7 @@ const app = new Vue({
     el: '#app',
     data: {
         emailList: [],
+        show: false,
     },
     created() {
         for (let i = 0; i < 10; i++) {
@@ -19,5 +20,7 @@ const app = new Vue({
                     console.log(error);
                 })
         }
+
+        this.show = true;
     }
 })
